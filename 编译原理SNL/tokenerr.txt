@@ -1,0 +1,7 @@
+program  p
+var  integer  i,j,num;
+     char a;
+begin
+   a:='dddd';
+end.
+  

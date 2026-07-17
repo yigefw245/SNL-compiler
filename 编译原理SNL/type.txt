@@ -1,0 +1,7 @@
+program  p
+var  integer  i,j,num;
+      array[1..20] of  integer a;
+begin
+l:=1;
+end.
+  

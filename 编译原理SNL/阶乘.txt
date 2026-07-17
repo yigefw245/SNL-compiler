@@ -1,0 +1,18 @@
+program sd
+var integer s,t;
+procedure factor(integer s);
+var integer w,m;
+begin
+w:=1;
+m:=1;
+while w<s+1
+do
+m:=m*w;
+w:=w+1;
+endwh;
+write(m);
+end
+begin
+read(s);
+factor(s);
+end. 

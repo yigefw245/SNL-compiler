@@ -1,0 +1,62 @@
+ENTRY,Labelq,1,1
+=,1, ,i
+=,1, ,j
+WHILE, , , 
+<,i,num,t0
+do,t0, , 
+-,num,i,t1
++,t1,1,t2
+=,t2, ,j
+=,1, ,k
+WHILE, , , 
+<,k,j,t3
+do,t3, , 
++,k,1,t4
+[+],a,t4,t5
+[+],a,k,t6
+<,t5,t6,t7
+THEN,t7, , 
+[+],a,k,t8
+=,t8, ,t
+[+],a,k,t9
++,k,1,t10
+[+],a,t10,t11
+=,t11, ,t9
++,k,1,t12
+[+],a,t12,t13
+=,t, ,t13
+ELSE, , , 
+=,0, ,t
+ENDIF, , , 
++,k,1,t14
+=,t14, ,k
+ENDWH, , , 
++,i,1,t15
+=,t15, ,i
+ENDWH, , , 
+ENDFUC, , , 
+READ, , ,num
+=,1, ,i
+WHILE, , , 
++,num,1,t16
+<,i,t16,t17
+do,t17, , 
+READ, , ,j
+[+],a,i,t18
+=,j, ,t18
++,i,1,t19
+=,t19, ,i
+ENDWH, , , 
+VarACT,num,0,1
+CALL,q,true,t20
+=,1, ,i
+WHILE, , , 
++,num,1,t21
+<,i,t21,t22
+do,t22, , 
+[+],a,i,t23
+WRITE, , ,t23
++,i,1,t24
+=,t24, ,i
+ENDWH, , , 
+END, , , 
